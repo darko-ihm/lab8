@@ -1,0 +1,23 @@
+=== DAST DYNAMIC SECURITY SCAN REPORT ===
+Target: http://127.0.0.1:5000
+
+[MEDIUM] Missing Security Header: x-frame-options
+[MEDIUM] Missing Security Header: x-content-type-options
+[MEDIUM] Missing Security Header: content-security-policy
+[CRITICAL] OS Command Injection (CWE-78) at /ping -> Response: {
+  "output": "Checking host: localhost\ndarko\\royal"
+}
+[HIGH] SQL Injection (CWE-89) at /search -> Leaked records: {
+  "results": [
+    [
+      1,
+      "Public Note"
+    ],
+    [
+      2,
+      "Admin Backup"
+    ]
+  ]
+}
+
+Total dynamic vulnerabilities detected: 5

@@ -1,0 +1,5 @@
+=== DAST DYNAMIC SECURITY SCAN REPORT ===
+Target: http://127.0.0.1:5000
+
+
+Total dynamic vulnerabilities detected: 0
